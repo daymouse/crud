@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.body-dash{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color:#EEEEEE;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 7%;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(6, 6, 6, 0.35); 
+    backdrop-filter: blur(1px);
+}
+.logo{
+   font-size: 2rem;
+   font-style: italic;
+   color:#EEEEEE;
+   font-weight: 700;
+}
+.logo-1{
+    font-size: 2rem;
+   font-style: italic;
+   color:#615EFC;
+}
+.menu{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.7rem;
+}
+.menu a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: #EEEEEE;
+}
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 8px;
+    bottom: 0;
+    left: 50%;
+    background-color: #615EFC;
+    transition: width 0.4s ease, left 0.4s ease;
+    border-radius: 4px;
+}
+  
+.menu a:hover::before {
+    width: 100%;
+    left: 0;
+}
+.men-sis {
+    position: relative; 
+}
+  
+.men-sis-1 {
+    display: none; 
+    position: absolute; 
+    background-color: #f8f2f2; 
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 2rem;
+}
+.men-gur-1{
+    display: none; 
+    position: absolute; 
+    background-color: #f8f2f2; 
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 2rem;
+}
+  
+.men-sis:hover .men-sis-1 {
+    display: block; 
+}
+.men-sis:hover .men-gur-1 {
+    display: block; 
+}
+  
+.men-sis-1 a {
+    color: rgb(14, 5, 5); 
+    text-decoration: none; 
+    display: block; 
+    width: 8rem;
+    height: 3rem;
+}
+.men-gur-1 a {
+    color: rgb(14, 5, 5); 
+    text-decoration: none; 
+    display: block; 
+    width: 20rem;
+    height: 3rem;
+}
+.container1-1{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 7%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../asset/smk.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: space-between;
+}
+.container2-2{
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    animation: scaleUp 1s ease-out;
+}
+.judul{
+    font-size: 3rem;
+    padding: 0;
+    color:#EEEEEE;
+    font-weight: 700;
+    font-style: italic;
+}
+.judul-nama{
+    font-size: 3.8rem;
+    color:#EEEEEE;
+    font-weight: 700;
+    font-style: italic;
+}
+button{
+    width: 16rem;
+    height: 16rem;
+    background-color: #615EFC;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8rem;
+    animation: scaleUp 1s ease-out;
+}
+button:hover {
+    outline: none;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  }
+.judul-menu{
+    display: flex;
+    gap:1rem;
+    width: 35rem;
+    height: 33rem;
+    flex-wrap: wrap;
+}
+.judul-menu a img{
+    width: 8rem;
+}
+.but1{
+    border-radius:  3.5rem 3.5rem 0 3.5rem ;
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 700;
+    font-style: italic; 
+}
+.but2{
+    border-radius: 3.5rem 3.5rem 3.5rem 0;  
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 700;
+    font-style: italic; 
+}
+.but3{
+    border-radius: 3.5rem 0 3.5rem 3.5rem;  
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 700;
+    font-style: italic;
+}
+.but4{
+    border-radius: 0 3.5rem 3.5rem 3.5rem;  
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* ==============siswa php==========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.body-siswa{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin: 2.7rem;
+    margin-top: 5.5rem;
+}
+header span{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+  
+}
+table{
+    width: 100%;
+    font-size: 2rem;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    background-color: #ECDFCC;
+    animation: scaleUp 1s ease-out;
+    margin-bottom: 2rem;
+}
+td{
+    border-bottom: 4px solid black;
+    height: 4rem;
+    text-align: left;
+    padding: 0 0.5%;
+    font-weight: 500;
+}
+th{
+    border-bottom: 4px solid black;
+    height: 4rem;
+    text-align: left;
+    border-collapse: collapse;
+    padding: 0 0.5%;
+}
+.tombol{
+    width: 5.5rem;
+    height: 2.3rem;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+}
+.container2{
+    position: fixed; 
+    bottom: 2rem; 
+    right: 2rem;
+}
+.tambah{
+   width:4rem;
+   height: 4rem;
+   text-decoration: none;
+   color:#615EFC;
+}
+
+.lain-1{
+    width:2rem;
+    height: 2rem;
+    text-decoration: none;
+    color: #1E3E62;
+    padding: 0 0.5%;
+}
+.tr-data:hover{
+    color: #ad0b0b;
+    border-bottom: 6px solid #ad0b0b;
+}
+.lain-1:hover{
+    color: #ad0b0b;
+}
+.lain a:hover{
+    transform:  translateY(-5px);;
+}
+
+/*=================guru.php===============*/
+
+.body-guru{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+   
+}
+/*=============kelas.php===============*/
+.body-kelas{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+   
+}
+/*==============mapel.php============*/
+.body-mapel{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/*----------EDIT-----------*/
+/*============edit siswa=======*/
+
+.body-tambah-siswa{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/bg-login.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+.container-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.form-edit{
+    width:50%;
+    border: 3px solid #060606;
+    height: 60%;
+    border-radius: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color:#F2EED7;
+    animation: scaleUp 1s ease-out;
+}
+.edit-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 80%;
+    gap:1.5rem;
+    margin:1.5rem;
+}
+.input-cont input{
+    width: 100%;
+    height: 80%;
+}
+.submit{
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 2rem 0 2rem 0;
+    border: 3px solid black;
+}
+.inpt {
+    border: none;
+    border-bottom: 4px solid black;
+    padding: 5px;
+    outline: none;
+    background-color:#F2EED7;
+    font-size: 1.5rem;
+}
+.edit-span{
+    font-size: 1.5rem;
+}
+
+/*===========EDIT MAPEL==========*/
+
+.body-edit-mapel{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/bg-login.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/*===========edit kelas========*/
+.body-edit-kelas{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/bg-login.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/*=========edit guru==========*/
+.body-edit-guru{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/bg-login.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/*=============TAMBAH =========*/
+.body-tambah-siswa{
+    padding: 0;
+    margin: 0;
+    background-color:#F2EED7;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/bg-login.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.form-tambah-w{
+    display: flex;
+    justify-content: space-between;
+}
+.form-tambah{
+    width:50%;
+    border: 3px solid #060606;
+    height: 70%;
+    border-radius: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color:#F2EED7;
+    animation: scaleUp 1s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.form-tambah-guru{
+    width:50%;
+    border: 3px solid #060606;
+    height: 80%;
+    border-radius: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color:#F2EED7;
+    animation: scaleUp 1s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+/*===========login=========*/
+.body-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/bg-login.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.form-login{
+    border: 3px solid #1E3E62;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    gap:1.5rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:3rem 0 3rem 0;
+    background-color:#F2EED7;
+    animation: scaleUp 1s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.input-cont-login{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.input-login{
+    width:100%;
+    height: 3rem;
+    border: none;
+    border-bottom: 4px solid black;
+    padding: 5px;
+    outline: none;
+    background-color:#F2EED7;
+}
+.submit-login{
+    width: 8rem;
+    height: 3rem;
+    border-radius:1rem 0 1rem 0;
+    background-color: #b7b5b5;
+    font-family: 'Poppins', sans-serif;
+
+}
+.judul-login{
+    font-size: 1.5rem;
+}
+/*=====================*/
+input:-webkit-autofill {
+    background-color:#F2EED7 !important;
+    color:#060606;
+    -webkit-text-fill-color: #060606; 
+    box-shadow: 0 0 0 30px #F2EED7 inset; 
+    font-size: 1.5rem;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0); 
+        opacity: 0; 
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }
+}
